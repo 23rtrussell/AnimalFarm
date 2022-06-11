@@ -37,3 +37,12 @@ footer{
     border: solid 2px black;
     margin-top: 1%;
 }
+
+#description {
+    display: block;
+    height: 200px
+}
+
+#descriptionLabel {
+    display:block;
+}

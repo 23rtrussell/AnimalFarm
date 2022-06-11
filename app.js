@@ -41,8 +41,15 @@ function handleMakingHorses(){
   horses.appendChild(newHorse);
 }
 
+const label = document.createElement("label");
+const input = document.createElement("input");
+const submit = document.createElement("input");
+const fieldset = document.createElementById('first');
 
-// // TODO: create an event listener for the `Make Horse` Button that calls a function named `handleMakingHorse`
+label.textContent = 'username: '
+input.type = "text";
+submit.type = "submit";
 
-// // TODO: write a function called `handleMakingHorse that makes a new list item, assigns its text content to `Horse` or the name of a horse you know, and append it to the fourth unordered list.
-
+document.fieldset.appendChild(label);
+document.fieldset.appendChild(input);
+document.fieldset.appendChild(submit);
