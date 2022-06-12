@@ -1,7 +1,5 @@
 'use strict';
 
-// TODO: assign `catButton` a value by selecting the button labeled `Make Cat` from the DOM
-
 const catButton = document.getElementById('make-cat');
 catButton.addEventListener('click', function(){
   const newCat = document.createElement('li');
@@ -18,9 +16,6 @@ dogButton.addEventListener('click', function () {
    dogs.appendChild(newDog);
   });
 
-//  const sheepButton = document.getElementById('make-sheep');
-
-// // // TODO: add an event listener to the sheepButton that calls `handleMakingSheep` when clicked
 const sheepButton = document.getElementById('make-sheep');
 sheepButton.addEventListener('click', handleMakingSheep);
 
@@ -41,14 +36,23 @@ function handleMakingHorses(){
   horses.appendChild(newHorse);
 }
 
+const form = document.getElementById('theform')
 const label = document.createElement("label");
 const input = document.createElement("input");
-const submit = document.createElement("input");
+const submit = document.createElement('input');
 const fieldset = document.createElementById('first');
+const content = document.createElement('textarea');
 
-label.textContent = 'username: '
+label.textContent = 'Topic: '
 input.type = "text";
+input.id = "title";
+input.name = "input";
+content.id = "info";
+content.name= "content";
 submit.type = "submit";
+content.rows= "10";
+content.cols = "300"
+
 
 document.fieldset.appendChild(label);
 document.fieldset.appendChild(input);
